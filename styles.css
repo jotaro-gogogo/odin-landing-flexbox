@@ -108,3 +108,31 @@ header{
   justify-content: center;
   align-items: flex-end;
 }
+
+main{
+  padding-bottom: 136px;
+}
+
+main>div>p{
+  font-size: 36px;
+  color: var(--bg-dark);
+  font-weight: bolder;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.mentions{
+  display: flex;
+  flex: 1 1 0;
+  gap: 60px;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mentions>div>img{
+  border: 3px var(--button) solid;
+  border-radius: 20px;
+  width: 180px;
+  margin-bottom: 10px;
+}
