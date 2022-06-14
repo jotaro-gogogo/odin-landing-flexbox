@@ -10,6 +10,19 @@
   font-family: sans-serif, Helvetica, Arial;
 }
 
+a{
+  color: var(--header-maintext);
+  text-decoration: none;
+}
+
+a:active{
+  color: orangered;
+}
+
+a:visited{
+  color: var(--header-maintext);
+}
+
 header{
   display: flex;
   flex-direction: column;
@@ -22,14 +35,27 @@ header{
 .nav{
   display: flex;
   flex: 1 1 0;
-  padding: 10px;
-  border: 3px green solid;
+  padding-top: 18px;
+}
+
+.logo, .sections{
+  display: flex;
+  flex: 1 1 0;
+}
+
+.logo{
+  align-items: flex-start;
+}
+
+.sections{
+  justify-content: right;
+  gap: 30px;
+  margin-top: 2px;
 }
 
 .hero{
   display: flex;
   flex: 4 1 0;
-  /* border: 3px red solid; */
 }
 
 .text, .image{
