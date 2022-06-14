@@ -3,6 +3,7 @@
   --header-maintext: #F9FAF8;
   --hero-smalltext: #E5E7EB;
   --button: #3882F6;
+  --quote: #E5E7EB;
 }
 
 *{
@@ -90,7 +91,7 @@ header{
   color: var(--hero-smalltext);
 }
 
-.text>button{
+.text>button, .end-button{
   background-color: var(--button);
   border-radius: 8px;
   padding: 10px 25px;
@@ -100,7 +101,7 @@ header{
   border: none;
 }
 
-.text>button:hover{
+.text>button:hover, .end-button:hover{
   background-color: #5090f7;
 }
 
@@ -131,8 +132,67 @@ main>div>p{
 }
 
 .mentions>div>img{
-  border: 3px var(--button) solid;
+  border: 4px var(--button) solid;
   border-radius: 20px;
   width: 180px;
   margin-bottom: 10px;
 }
+
+.quote{
+  background-color: var(--quote);
+  color: var(--bg-dark);
+  font-size: 36px;
+  font-style: italic;
+  padding: 140px 0;
+}
+
+.quote>div{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.author{
+  text-align: end;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: bold;
+  padding-right: 100px;
+}
+
+.author>a{
+  color: #377feb;
+  text-decoration: underline;
+}
+
+.author>a:active{
+  color: #96b8ec;
+}
+
+/* .action-container{
+  display: flex;
+  color: var(--header-maintext);
+  background-color: var(--button);
+  padding: 100px 200px;
+  border: 2px green solid;
+}
+
+.action{
+  
+  padding: 60px;
+}
+
+.action>p>span{
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.action>p{
+  font-size: 18px;
+  border: 2px red solid;
+}
+
+.end-button{
+  border: 2px white solid;
+  max-width: 150px;
+  color: var(--header-maintext);
+} */
