@@ -23,6 +23,14 @@ a:visited{
   color: var(--header-maintext);
 }
 
+h2:active{
+  /*
+  ** Because it was not getting the color 
+  ** when active if set to <a>
+  */
+  color: orangered;
+}
+
 header{
   display: flex;
   flex-direction: column;
@@ -49,7 +57,7 @@ header{
 
 .sections{
   justify-content: right;
-  gap: 30px;
+  gap: 60px;
   margin-top: 2px;
 }
 
