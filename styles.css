@@ -16,20 +16,12 @@ a{
   text-decoration: none;
 }
 
-a:active{
-  color: orangered;
+a:active, h2:active{
+  color: #e0e0e0;
 }
 
 a:visited{
   color: var(--header-maintext);
-}
-
-h2:active{
-  /*
-  ** Because it was not getting the color 
-  ** when active if set to <a>
-  */
-  color: orangered;
 }
 
 header{
@@ -58,7 +50,7 @@ header{
 
 .sections{
   justify-content: right;
-  gap: 60px;
+  gap: 83px;
   margin-top: 2px;
 }
 
@@ -101,8 +93,12 @@ header{
   border: none;
 }
 
-.text>button:hover, .end-button:hover{
-  background-color: #5090f7;
+.text>button:hover, .end-button:hover, .banner-button button:hover{
+  background-color: #2c76ec;
+}
+
+.text>button:active, .end-button:active, .banner-button button:active{
+  background-color: #0b5fe6;
 }
 
 .image{
@@ -168,31 +164,59 @@ main>div>p{
   color: #96b8ec;
 }
 
-/* .action-container{
+.action-container{
   display: flex;
-  color: var(--header-maintext);
+  flex: 1 1 0;
+  justify-content: center;
+  padding: 0 12%;
+}
+
+.banner{
+  display: flex;
   background-color: var(--button);
-  padding: 100px 200px;
-  border: 2px green solid;
-}
-
-.action{
-  
-  padding: 60px;
-}
-
-.action>p>span{
-  font-size: x-large;
-  font-weight: bold;
-}
-
-.action>p{
-  font-size: 18px;
-  border: 2px red solid;
-}
-
-.end-button{
-  border: 2px white solid;
-  max-width: 150px;
+  margin: 60px auto;
+  padding: 60px 30px;
+  width: 100%;
+  border-radius: 8px;
   color: var(--header-maintext);
-} */
+}
+
+.words, .banner-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.words{
+  flex: 2 1 0;
+  text-align: center;
+}
+
+.words>p{
+  text-align: left;
+  font-size: 18px;
+}
+
+.words span{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.banner-button{
+  flex: 1 1 0;
+}
+
+.banner-button button{
+  background-color: var(--button);
+  border-radius: 8px;
+  padding: 10px 40px;
+  color: var(--hero-maintext);
+  font-weight: bold;
+  font-size: large;
+  border: 2px white solid;
+}
+
+.banner-button button:active{
+  background-color: #0b5fe6;
+  color: var(--header-maintext);
+}
